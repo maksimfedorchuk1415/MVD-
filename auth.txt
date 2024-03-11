@@ -1,0 +1,41 @@
+ private users _currentUser = new users();
+ public string user_name;
+ static public string login, password;
+ static public int role;
+ public string name;
+ public Auth()
+ {
+     InitializeComponent();
+    
+ }
+
+/* private void BtnAuth_Click(object sender, RoutedEventArgs e, otdel_kEntities10 otdel_kEntities10)
+ {
+     if (string.IsNullOrWhiteSpace(tbLogin.Text) || string.IsNullOrWhiteSpace(tbPassword.Password))
+     {
+         MessageBox.Show("Введите все данные!");
+         return;
+     }
+     if (otdel_kEntities10.GetContext().users.Any(x => x.email == tbLogin.Text && x.password == tbPassword.Password && x.role == 1))
+     {
+         _currentUser = otdel_kEntities10.GetContext().users.Where(b => b.email == tbLogin.Text && b.password == tbPassword.Password).FirstOrDefault();
+         user_name = _currentUser.name;
+         App.Current.Resources["UserInfo"] = user_name;
+         NavigationService.GetNavigationService(this).Navigate(new Menu());
+     }
+     else
+     {
+         if (otdel_kEntities10.GetContext().users.Any(x => x.email == tbLogin.Text && x.password == tbPassword.Password && x.role == 0))
+         {
+             _currentUser = otdel_kEntities10.GetContext().users.Where(b => b.email == tbLogin.Text && b.password == tbPassword.Password).FirstOrDefault();
+             user_name = _currentUser.name;
+             App.Current.Resources["UserInfo"] = user_name;
+             NavigationService.GetNavigationService(this).Navigate(new Menu());
+         }
+         else
+         {
+             MessageBox.Show("Не верный логин или пароль!");
+         }
+     }
+
+ }*/
